@@ -29,7 +29,7 @@ Assumindo que esteja assim, podemos descrever as funções que usaremos para ret
 **get_assets_js()**, 
 **get_assets_css()**
 
-Tudo localizado dentro do arquivo ***lib/crawling.ex***. Agora, iremos executar o seguinte trecho de código, que nos retornara todas as urls dentro do https://elixir-lang.org/ 
+Todas as funções estão localizadas dentro do arquivo ***lib/crawling.ex***. Agora, iremos executar o seguinte trecho de código, que nos retornara todas as urls dentro do https://elixir-lang.org/ 
 
 ```iex(1)>Crawling.get_url```
 
@@ -41,6 +41,8 @@ Com isso, obtemos os resultados via terminal de cada informação descrita na p�
 
 ### Considerações
 
-O teste foi bem bacana, tendo em vista que o código não está retornando conforme o que fora cobrado, por exemplo, os assets retornados, deveriam ser retornados para cada página linkada dentro elixir-lang.org. Isso não foi possível, pois depois de infindáveis tentativas, a complexidade do código aumentou e alguns bugs vinha acontecendo. Pelo elixir trabalhar com funções, a repetição das mesmas, não causam "tanto" problema pelo Elixir ser mais performático que uma linguagem O.O. Porém, ainda é necessário um refatoração. Além do mais, o código dentro do **lib** está comentando, citando algumas situaçes que eu estava tentando para melhor resolver os problemas do desafio, contudo, nao foi possível. 
+O teste foi bem bacana, tendo em vista que o código não está retornando conforme o que fora cobrado, por exemplo, os assets retornados, deveriam ser retornados para cada página linkada dentro elixir-lang.org. Isso não foi possível, pois depois de infindáveis tentativas, a complexidade do código aumentou e alguns bugs vinham acontecendo.
+
+Pelo Elixir trabalhar com funções, a repetição das mesmas, não causam "tanto" problema performático. Isso poderia ser um problema, se eu estivesse usando uma outra linguagem Orientada a Objeto. Porém, ainda é necessário uma refatoração. Além do mais, o código dentro do **lib/crawling.ex** está comentando, citando algumas situações que eu estava tentando para melhor resolver os problemas do desafio, contudo, não foi possível. 
 
 Agradeço a oportunidade e até breve.
