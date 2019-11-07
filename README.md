@@ -4,7 +4,7 @@
 
 Para que seja possível a execução do código, é necessário que esteja instalado o Elixir e o Erlang na máquina. No caso, a máquina usada, é um Debian/Ubuntu.
 
-Se ainda não possui nenhum dos itens citados instalados, segue um pequeno tutorial de como instalar os recursos:https://bit.ly/34GbUVE
+Se ainda não possui nenhum dos itens citados instalados, segue um pequeno tutorial de como instalar os recursos: https://bit.ly/34GbUVE
 
 A versão em uso é a **Elixir 1.9.2** e **Erlang/OTP 22**
 
@@ -16,7 +16,7 @@ Logo após, podemos abrir o terminal dentro da pasta Crawling
 
 ``` yourmachine:~/crawling$ ```
 
-Agora, podemos baixar as dependências com o **mix deps.get**. Em seguida, executamos o **iex -S mix** e com isso, estaremos no ambiente de execução de código, necessitando apenas chamar nosso módulo e suas respectivas funções.
+Agora, podemos baixar as dependências executando o comando: ```mix deps.get``` e em seguida o ```iex -S mix``` com isso, estaremos no ambiente de execução de código, necessitando apenas chamar nosso módulo e suas respectivas funções.
 
 ****Certifique que você está com o seguinte prompt no seu terminal***
 
@@ -24,9 +24,9 @@ Agora, podemos baixar as dependências com o **mix deps.get**. Em seguida, execu
 
 Assumindo que esteja assim, podemos descrever as funções que usaremos para retorno de nossas requisições, sendo elas:
 
-**get_url()**
-**get_assets_img()**
-**get_assets_js()**
+**get_url()**, 
+**get_assets_img()**, 
+**get_assets_js()**, 
 **get_assets_css()**
 
 Tudo localizado dentro do arquivo ***lib/crawling.ex***. Agora, iremos executar o seguinte trecho de código, que nos retornara todas as urls dentro do https://elixir-lang.org/ 
@@ -41,3 +41,6 @@ Com isso, obtemos os resultados via terminal de cada informação descrita na p�
 
 ### Considerações
 
+O teste foi bem bacana, tendo em vista que o código não está retornando conforme o que fora cobrado, por exemplo, os assets retornados, deveriam ser retornados para cada página linkada dentro elixir-lang.org. Isso não foi possível, pois depois de infindáveis tentativas, a complexidade do código aumentou e alguns bugs vinha acontecendo. Pelo elixir trabalhar com funções, a repetição das mesmas, não causam "tanto" problema pelo Elixir ser mais performático que uma linguagem O.O. Porém, ainda é necessário um refatoração. Além do mais, o código dentro do **lib** está comentando, citando algumas situaçes que eu estava tentando para melhor resolver os problemas do desafio, contudo, nao foi possível. 
+
+Agradeço a oportunidade e até breve.
